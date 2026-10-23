@@ -1,0 +1,32 @@
+{
+  "name": "dsh-default-chinese",
+  "version": "1.0.0",
+  "description": "默认中文回复：为 DeepSeek Harness 的所有 Agent 注入系统提示词段，所有回复默认使用简体中文。 · Make Chinese the default reply language for every DeepSeek Harness response.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "chinese",
+    "language",
+    "system-prompt"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
